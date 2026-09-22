@@ -5,7 +5,6 @@
 * Дата: 16.09.2026       *
 * Название: Лаб №1       *
 *************************/
-// Example program
 #include <iostream>
 #include <cmath>
 
@@ -21,10 +20,10 @@ int main() {
     secondTemp = 43.0;
     F = 0.53;
     L = 1;
-
     double firstQ = ((lya * F) / (secondRad - firstRad)) * (firstTemp - secondTemp);
-
-    double secondQ = (2 * (pi * lya * L) )
-
-    cout << "Q =" << Q;
+    double secondQ = ((2 * pi * lya * L) / log(secondRad / firstRad)) * (firstTemp - secondTemp);
+    double thirdQ = ((4 * pi * lya) / ((1.0 / firstRad) - (1.0 / secondRad))) * (firstTemp - secondTemp);
+    cout << "Q1 = " << firstQ << endl;
+    cout << "Q2 = " << secondQ << endl;
+    cout << "Q3 = " << thirdQ << endl;
 }
