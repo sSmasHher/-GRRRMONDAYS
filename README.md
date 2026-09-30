@@ -16,11 +16,12 @@ int main() {
     
     double lya, firstRad, secondRad, firstTemp, secondTemp, square, lenght, firstQ, secondQ, thirdQ;
     
-    lya = 59.034;
     firstRad = 25.2 / 100.0;
     secondRad = 29.3 / 100.0;
     firstTemp = 264.0;
     secondTemp = 43.0;
+
+    cout << "Lya:"; cin >> lya;
     
     cout << "Square:"; cin >> square;
 
